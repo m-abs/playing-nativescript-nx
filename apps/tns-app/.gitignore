@@ -1,0 +1,7 @@
+platforms
+hooks
+app/**/*.js
+app/**/*.js.map
+app/**/*.css
+app/**/*.d.ts
+package-lock.json
