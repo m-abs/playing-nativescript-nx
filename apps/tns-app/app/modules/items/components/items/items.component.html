@@ -26,11 +26,13 @@ class names available for styling your app at https://docs.nativescript.org/ui/t
 <StackLayout class="page">
     <ListView [items]="items" class="list-group">
         <ng-template let-item="item">
-          <StackLayout orientation="horizontal" class="p-x-10" [nsRouterLink]="['/items', item.id]">
-            <Label class="fa" [text]="'fa-futbol-o' | fonticon"></Label>
-            <Label [text]="item.name"
+          <GridLayout columns="auto, *" class="p-x-10" [nsRouterLink]="['/items', item.id]">
+            <StackLayout col="0" verticalAlignment="center">
+              <Label class="fa" [text]="'fa-futbol-o' | fonticon" verticalAlignment="center"></Label>
+            </StackLayout>
+            <Label col="1" [text]="item.name"
                 class="list-group-item"></Label>
-          </StackLayout>
+          </GridLayout>
         </ng-template>
     </ListView>
 </StackLayout>
