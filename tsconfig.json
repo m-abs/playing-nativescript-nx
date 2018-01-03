@@ -22,6 +22,7 @@
     }
   },
   "exclude": [
+    "apps/**/platforms",
     "node_modules",
     "tmp"
   ]
